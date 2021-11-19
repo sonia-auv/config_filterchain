@@ -3,13 +3,13 @@ filters:
   - name: RotateFilter
     parameters:
       - name: Enable
-        value: 0
+        value: 1
       - name: Execution time
         value: 0
       - name: Transpose
-        value: 0
+        value: 1
       - name: Rotation type
-        value: 3
+        value: 1
   - name: CropFilter
     parameters:
       - name: Enable

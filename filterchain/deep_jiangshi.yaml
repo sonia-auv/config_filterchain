@@ -15,7 +15,7 @@ filters:
       - name: jiangshi
         value: 1
       - name: answag
-        value: 1
+        value: 0
       - name: vampire
         value: 0
       - name: bat

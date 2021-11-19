@@ -1,4 +1,4 @@
-name: deep_bottom
+name: deep_bat
 filters:
   - name: Deep2019Filter
     parameters:
@@ -7,7 +7,7 @@ filters:
       - name: Execution time
         value: 0
       - name: Debug contour
-        value: 1
+        value: 0
       - name: vetalas
         value: 0
       - name: draugr
@@ -21,4 +21,4 @@ filters:
       - name: bat
         value: 1
       - name: wolf
-        value: 1
+        value: 0
