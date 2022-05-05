@@ -3,13 +3,13 @@ filters:
   - name: RotateFilter
     parameters:
       - name: Enable
-        value: 1
+        value: 0
       - name: Execution time
         value: 0
       - name: Transpose
-        value: 1
+        value: 0
       - name: Rotation type
-        value: 1
+        value: 3
   - name: CropFilter
     parameters:
       - name: Enable
@@ -49,7 +49,7 @@ filters:
       - name: Plane 1
         value: 5
       - name: Plane 2
-        value: 2
+        value: 0
       - name: Plane 3
         value: 4
       - name: Weight plane 1
@@ -67,11 +67,11 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 180
+        value: 200
   - name: ErodeFilter
     parameters:
       - name: Enable
-        value: 1
+        value: 0
       - name: Execution time
         value: 0
       - name: Square kernel
@@ -79,7 +79,7 @@ filters:
       - name: Kernel type
         value: 0
       - name: Width
-        value: 1
+        value: 6
       - name: Height
         value: 1
       - name: Iteration
@@ -87,7 +87,7 @@ filters:
   - name: BlurFilter
     parameters:
       - name: Enable
-        value: 1
+        value: 0
       - name: Execution time
         value: 0
       - name: Type
@@ -103,7 +103,7 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 100
+        value: 240
   - name: PipeAngleDetector
     parameters:
       - name: Enable
