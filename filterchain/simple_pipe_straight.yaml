@@ -1,4 +1,4 @@
-name: simple_pipe45
+name: simple_pipe_straight
 filters:
   - name: RotateFilter
     parameters:
@@ -86,3 +86,19 @@ filters:
         value: 200.000000
       - name: Minimum pixel
         value: 0.000000
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 50
+      - name: Height
+        value: 300
+      - name: Thickness
+        value: 1
+      - name: Origin X
+        value: 175
+      - name: Origin Y
+        value: 150
