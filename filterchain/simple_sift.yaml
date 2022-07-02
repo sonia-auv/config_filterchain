@@ -7,4 +7,4 @@ filters:
       - name: Execution time
         value: 0
       - name: Objective
-        value: 0
+        value: 2
