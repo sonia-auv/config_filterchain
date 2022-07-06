@@ -1,5 +1,15 @@
 name: simple_obstacle
 filters:
+  - name: RotateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Transpose
+        value: 1
+      - name: Rotation type
+        value: 1
   - name: SubtractAllPlanesFilter
     parameters:
       - name: Enable
@@ -13,27 +23,97 @@ filters:
       - name: Invert plane 3
         value: 0
       - name: Plane 1
-        value: 2
+        value: 3
       - name: Plane 2
-        value: 4
-      - name: Plane 3
         value: 5
+      - name: Plane 3
+        value: 0
       - name: Weight plane 1
         value: 1.000000
       - name: Weight plane 2
         value: 1.000000
       - name: Weight plane 3
         value: 1.000000
-  - name: ThresholdFilter
+  - name: IntervalThresholdFilter
     parameters:
       - name: Enable
         value: 1
       - name: Execution time
         value: 0
       - name: Threshold type
+        value: 1
+      - name: Minimum value 1
+        value: 40
+      - name: Minimum value 2
+        value: 118
+  - name: ErodeFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Square kernel
+        value: 1
+      - name: Kernel type
+        value: 0
+      - name: Width
+        value: 1
+      - name: Height
+        value: 1
+      - name: Iteration
+        value: 1
+  - name: DilateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Square kernel
+        value: 1
+      - name: Kernel type
+        value: 0
+      - name: Width
+        value: 3
+      - name: Height
+        value: 3
+      - name: Iteration
+        value: 2
+  - name: BlurFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Type
+        value: 3
+      - name: Kernel size
+        value: 12
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 0
+      - name: Execution time
+        value: 0
+      - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 23
+        value: 91
+  - name: ErodeFilter
+    parameters:
+      - name: Enable
+        value: 0
+      - name: Execution time
+        value: 0
+      - name: Square kernel
+        value: 0
+      - name: Kernel type
+        value: 0
+      - name: Width
+        value: 1
+      - name: Height
+        value: 1
+      - name: Iteration
+        value: 3
   - name: ObstacleDetector
     parameters:
       - name: Enable
@@ -45,6 +125,22 @@ filters:
       - name: Look for rectangle
         value: 1
       - name: Minimum area
-        value: 2000.000000
+        value: 100.000000
       - name: Maximum area
-        value: 15000.000000
+        value: 50000.000000
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 150
+      - name: Height
+        value: 350
+      - name: Thickness
+        value: 1
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
