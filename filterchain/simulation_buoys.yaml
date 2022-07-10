@@ -1,15 +1,5 @@
-name: simulation_cover
+name: simulation_buoys
 filters:
-  - name: RotateFilter
-    parameters:
-      - name: Enable
-        value: 1
-      - name: Execution time
-        value: 0
-      - name: Transpose
-        value: 1
-      - name: Rotation type
-        value: 1
   - name: SubtractAllPlanesFilter
     parameters:
       - name: Enable
@@ -23,9 +13,9 @@ filters:
       - name: Invert plane 3
         value: 0
       - name: Plane 1
-        value: 4
+        value: 2
       - name: Plane 2
-        value: 0
+        value: 1
       - name: Plane 3
         value: 0
       - name: Weight plane 1
@@ -41,9 +31,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Threshold type
-        value: 1
+        value: 0
       - name: Maximum value
-        value: 73
+        value: 11
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -53,38 +43,70 @@ filters:
       - name: Morphology type
         value: 4
       - name: Kernel type
-        value: 0
+        value: 2
       - name: Iteration
-        value: 15
+        value: 4
       - name: Kernel size
-        value: 1
-  - name: ObstacleDetector
-    parameters:
-      - name: Enable
-        value: 0
-      - name: Execution time
-        value: 0
-      - name: Debug contour
-        value: 1
-      - name: Look for rectangle
-        value: 1
-      - name: Minimum area
-        value: 1500.000000
-      - name: Maximum area
-        value: 30000.000000
-  - name: CenterCoffinDetector
+        value: 4
+  - name: BlurFilter
     parameters:
       - name: Enable
         value: 1
       - name: Execution time
         value: 0
+      - name: Type
+        value: 2
+      - name: Kernel size
+        value: 15
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 100
+  - name: EllipseDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
       - name: Debug contour
         value: 1
-      - name: Look for rectangle
+      - name: Look for ellipse
         value: 1
-      - name: Minimum area
-        value: 838.000000
-      - name: Maximum area
-        value: 10049.000000
+      - name: Look_for_Heart
+        value: 0
       - name: Target name
-        value: obstacle
+        value: badge
+      - name: Descriptor 1
+        value: ""
+      - name: Descriptor 2
+        value: ""
+      - name: Minimum area
+        value: 5000.000000
+      - name: Maximum area
+        value: 100000.000000
+      - name: Circle index
+        value: 0.500000
+      - name: Percent filled
+        value: 100
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 200
+      - name: Height
+        value: 300
+      - name: Thickness
+        value: 1
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0

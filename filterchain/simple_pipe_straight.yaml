@@ -99,6 +99,6 @@ filters:
       - name: Thickness
         value: 1
       - name: Origin X
-        value: 175
+        value: 0
       - name: Origin Y
-        value: 150
+        value: 0
