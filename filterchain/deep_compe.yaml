@@ -1,0 +1,14 @@
+name: deep_compe
+filters:
+  - name: DeepFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Debug contour
+        value: 1
+      - name: Model Name
+        value: "test"
+      - name: Topic Name
+        value: "/camera_array/front/image_raw/compressed"
+      - name: Confidence Threshold
+        value: 50.0
