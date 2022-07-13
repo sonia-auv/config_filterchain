@@ -1,4 +1,4 @@
-name: simulation_buoys
+name: simulation_gman
 filters:
   - name: SubtractAllPlanesFilter
     parameters:
@@ -13,13 +13,13 @@ filters:
       - name: Invert plane 3
         value: 0
       - name: Plane 1
-        value: 2
-      - name: Plane 2
         value: 1
+      - name: Plane 2
+        value: 0
       - name: Plane 3
         value: 0
       - name: Weight plane 1
-        value: 1.000000
+        value: 2.000000
       - name: Weight plane 2
         value: 1.000000
       - name: Weight plane 3
@@ -31,9 +31,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Threshold type
-        value: 0
+        value: 1
       - name: Maximum value
-        value: 11
+        value: 187
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -43,11 +43,11 @@ filters:
       - name: Morphology type
         value: 4
       - name: Kernel type
-        value: 2
+        value: 1
       - name: Iteration
-        value: 4
+        value: 3
       - name: Kernel size
-        value: 4
+        value: 3
   - name: BlurFilter
     parameters:
       - name: Enable
@@ -55,19 +55,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Type
-        value: 2
+        value: 3
       - name: Kernel size
-        value: 15
-  - name: ThresholdFilter
-    parameters:
-      - name: Enable
-        value: 1
-      - name: Execution time
-        value: 0
-      - name: Threshold type
-        value: 0
-      - name: Maximum value
-        value: 100
+        value: 5
   - name: EllipseDetector
     parameters:
       - name: Enable
@@ -81,32 +71,16 @@ filters:
       - name: Look_for_Heart
         value: 0
       - name: Target name
-        value: badge
+        value: gman
       - name: Descriptor 1
         value: ""
       - name: Descriptor 2
         value: ""
       - name: Minimum area
-        value: 5000.000000
+        value: 2000.000000
       - name: Maximum area
         value: 100000.000000
       - name: Circle index
-        value: 0.500000
+        value: 0.100000
       - name: Percent filled
         value: 100
-  - name: BoundingBoxFilter
-    parameters:
-      - name: Enable
-        value: 1
-      - name: Execution time
-        value: 0
-      - name: Width
-        value: 200
-      - name: Height
-        value: 300
-      - name: Thickness
-        value: 1
-      - name: Origin X
-        value: 0
-      - name: Origin Y
-        value: 0

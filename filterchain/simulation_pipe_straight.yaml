@@ -1,4 +1,4 @@
-name: simulation_cover
+name: simulation_pipe_straight
 filters:
   - name: RotateFilter
     parameters:
@@ -43,7 +43,7 @@ filters:
       - name: Threshold type
         value: 1
       - name: Maximum value
-        value: 73
+        value: 70
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -55,10 +55,10 @@ filters:
       - name: Kernel type
         value: 0
       - name: Iteration
-        value: 15
+        value: 3
       - name: Kernel size
         value: 1
-  - name: CenterDetector
+  - name: PipeStraightDetector
     parameters:
       - name: Enable
         value: 1
@@ -66,14 +66,10 @@ filters:
         value: 0
       - name: Debug contour
         value: 1
-      - name: Look for rectangle
-        value: 1
       - name: Minimum area
-        value: 2000.000000
-      - name: Maximum area
-        value: 50000.000000
-      - name: Target name
-        value: bins_cover
+        value: 200.000000
+      - name: Minimum pixel
+        value: 0.000000
   - name: BoundingBoxFilter
     parameters:
       - name: Enable
@@ -81,9 +77,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 75
+        value: 50
       - name: Height
-        value: 75
+        value: 300
       - name: Thickness
         value: 1
       - name: Origin X

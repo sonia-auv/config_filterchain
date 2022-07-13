@@ -1,0 +1,126 @@
+name: simulation_gun
+filters:
+  - name: SubtractAllPlanesFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Invert plane 1
+        value: 0
+      - name: Invert plane 2
+        value: 0
+      - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 1
+      - name: Plane 2
+        value: 6
+      - name: Plane 3
+        value: 6
+      - name: Weight plane 1
+        value: 3.000000
+      - name: Weight plane 2
+        value: 0.250000
+      - name: Weight plane 3
+        value: 2.000000
+  - name: IntervalThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 1
+      - name: Minimum value 1
+        value: 32
+      - name: Minimum value 2
+        value: 92
+  - name: CannyFilter
+    parameters:
+      - name: Enable
+        value: 0
+      - name: Execution time
+        value: 0
+      - name: L2 gradient
+        value: 0
+      - name: Aperture size
+        value: 2
+      - name: Threshold 1
+        value: 95
+      - name: Threshold 2
+        value: 255
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 4
+      - name: Kernel type
+        value: 1
+      - name: Iteration
+        value: 14
+      - name: Kernel size
+        value: 1
+  - name: HoughLineFilter
+    parameters:
+      - name: Enable
+        value: 0
+      - name: Execution time
+        value: 0
+      - name: Draw on original image
+        value: 0
+      - name: Minimum length
+        value: 53.000000
+      - name: Maximum gap
+        value: 8.000000
+      - name: Threshold
+        value: 139
+      - name: Theta - angle
+        value: 39
+      - name: Rho
+        value: 30.000000
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 0
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 0
+      - name: Kernel type
+        value: 1
+      - name: Iteration
+        value: 1
+      - name: Kernel size
+        value: 1
+  - name: PipeStraightDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Minimum area
+        value: 1000.000000
+      - name: Minimum pixel
+        value: 44.000000
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 70
+      - name: Height
+        value: 350
+      - name: Thickness
+        value: 1
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0

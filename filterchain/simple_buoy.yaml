@@ -62,7 +62,7 @@ filters:
         value: 10000.000000
       - name: Maximum area
         value: 50000.000000
-  - name: CenterCoffinDetector
+  - name: CenterDetector
     parameters:
       - name: Enable
         value: 0
