@@ -59,7 +59,7 @@ filters:
       - name: Iteration
         value: 10
       - name: Kernel size
-        value: 2
+        value: 1
   - name: BlurFilter
     parameters:
       - name: Enable
@@ -101,7 +101,7 @@ filters:
       - name: Minimum area
         value: 2500.000000
       - name: Maximum area
-        value: 100000.000000
+        value: 15000.000000
       - name: Circle index
         value: 0.500000
       - name: Percent filled
@@ -113,9 +113,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 130
+        value: 110
       - name: Height
-        value: 250
+        value: 220
       - name: Thickness
         value: 1
       - name: Origin X
