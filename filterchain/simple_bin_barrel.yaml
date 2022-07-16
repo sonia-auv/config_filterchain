@@ -1,0 +1,50 @@
+name: simple_bin_barrel
+filters:
+  - name: SubtractAllPlanesFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Invert plane 1
+        value: 0
+      - name: Invert plane 2
+        value: 0
+      - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 5
+      - name: Plane 2
+        value: 1
+      - name: Plane 3
+        value: 0
+      - name: Weight plane 1
+        value: 1.000000
+      - name: Weight plane 2
+        value: 1.000000
+      - name: Weight plane 3
+        value: 1.000000
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 100
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 4
+      - name: Kernel type
+        value: 1
+      - name: Iteration
+        value: 11
+      - name: Kernel size
+        value: 3
