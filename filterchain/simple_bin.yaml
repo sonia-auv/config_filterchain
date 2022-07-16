@@ -91,7 +91,7 @@ filters:
   - name: EllipseDetector
     parameters:
       - name: Enable
-        value: 1
+        value: 0
       - name: Execution time
         value: 0
       - name: Debug contour
@@ -114,6 +114,22 @@ filters:
         value: 0.500000
       - name: Percent filled
         value: 100
+  - name: CenterDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Look for rectangle
+        value: 1
+      - name: Minimum area
+        value: 100.000000
+      - name: Maximum area
+        value: 50000.000000
+      - name: Target name
+        value: test
   - name: BoundingBoxFilter
     parameters:
       - name: Enable
@@ -124,9 +140,9 @@ filters:
         value: 130
       - name: Height
         value: 250
-      - name: Thickness
-        value: 1
       - name: Origin X
         value: 0
       - name: Origin Y
         value: 0
+      - name: Thickness
+        value: 1

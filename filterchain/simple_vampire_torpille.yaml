@@ -4,6 +4,8 @@ filters:
     parameters:
       - name: Enable
         value: 0
+      - name: Execution time
+        value: 0
       - name: X Offset
         value: 0
       - name: Y Offset
@@ -16,17 +18,19 @@ filters:
     parameters:
       - name: Enable
         value: 1
-      - name: Plane 1
-        value: 2
-      - name: Plane 2
-        value: 1
-      - name: Plane 3
+      - name: Execution time
         value: 0
       - name: Invert plane 1
         value: 0
       - name: Invert plane 2
         value: 0
       - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 4
+      - name: Plane 2
+        value: 3
+      - name: Plane 3
         value: 0
       - name: Weight plane 1
         value: 1.000000
@@ -38,6 +42,8 @@ filters:
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
       - name: Threshold type
         value: 0
       - name: Maximum value
@@ -45,6 +51,8 @@ filters:
   - name: ErodeFilter
     parameters:
       - name: Enable
+        value: 0
+      - name: Execution time
         value: 0
       - name: Square kernel
         value: 1
@@ -60,6 +68,8 @@ filters:
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
       - name: Square kernel
         value: 1
       - name: Kernel type
@@ -74,6 +84,8 @@ filters:
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
       - name: Square kernel
         value: 1
       - name: Kernel type
@@ -88,6 +100,8 @@ filters:
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
       - name: Type
         value: 2
       - name: Kernel size
@@ -96,6 +110,8 @@ filters:
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
       - name: Threshold type
         value: 0
       - name: Maximum value
@@ -103,7 +119,9 @@ filters:
   - name: VampireTorpedoesDetector
     parameters:
       - name: Enable
-        value: 1
+        value: 0
+      - name: Execution time
+        value: 0
       - name: Debug contour
         value: 1
       - name: Look for ellipse
@@ -117,7 +135,9 @@ filters:
   - name: VampireTorpedoesCloseDetector
     parameters:
       - name: Enable
-        value: 1
+        value: 0
+      - name: Execution time
+        value: 0
       - name: Debug contour
         value: 1
       - name: Look for ellipse
