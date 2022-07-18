@@ -1,0 +1,12 @@
+name: simple_rotate
+filters:
+  - name: RotateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Transpose
+        value: 1
+      - name: Rotation type
+        value: 1

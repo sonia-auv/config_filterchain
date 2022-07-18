@@ -1,5 +1,15 @@
 name: deep_compe
 filters:
+  - name: RotateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Transpose
+        value: 1
+      - name: Rotation type
+        value: 1
   - name: DeepFilter
     parameters:
       - name: Enable
@@ -11,22 +21,34 @@ filters:
       - name: Model Name
         value: testCompe_23_06_2022_bottom-torpidoes-badge-bootlegger-buoys_ssd_mobilenet_v2_fpnlite_640x640_20220705T042610
       - name: Topic Name
-        value: /camera_array/bottom/image_raw/compressed
+        value: /proc_image_processing/simple_rotate_image/compressed
       - name: Confidence Threshold
         value: 80.000000
-      - name: Gun
+      - name: Whiskey
         value: 1
       - name: Phone
         value: 1
-      - name: Barrel
-        value: 1
-      - name: Badge
-        value: 1
       - name: Notepad
         value: 1
-      - name: G-Man
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
         value: 1
-      - name: Bootlegger
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 90
+      - name: Height
+        value: 115
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
         value: 1
-      - name: Whiskey
+      - name: Center Width
+        value: 30
+      - name: Center Height
+        value: 30
+      - name: Center Thickness
         value: 1
