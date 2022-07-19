@@ -1,19 +1,5 @@
 name: simple_vampire_torpille
 filters:
-  - name: CropFilter
-    parameters:
-      - name: Enable
-        value: 0
-      - name: Execution time
-        value: 0
-      - name: X Offset
-        value: 0
-      - name: Y Offset
-        value: 0
-      - name: X Reduction
-        value: 0
-      - name: Y Reduction
-        value: 0
   - name: SubtractAllPlanesFilter
     parameters:
       - name: Enable
@@ -29,13 +15,13 @@ filters:
       - name: Plane 1
         value: 4
       - name: Plane 2
-        value: 3
+        value: 5
       - name: Plane 3
         value: 0
       - name: Weight plane 1
-        value: 1.000000
+        value: 2.000000
       - name: Weight plane 2
-        value: 1.000000
+        value: 3.000000
       - name: Weight plane 3
         value: 1.000000
   - name: ThresholdFilter
@@ -47,7 +33,7 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 30
+        value: 121
   - name: ErodeFilter
     parameters:
       - name: Enable
@@ -57,49 +43,31 @@ filters:
       - name: Square kernel
         value: 1
       - name: Kernel type
-        value: 0
+        value: 2
       - name: Width
         value: 1
       - name: Height
         value: 1
       - name: Iteration
         value: 1
-  - name: DilateFilter
+  - name: MorphologyFilter
     parameters:
       - name: Enable
         value: 1
       - name: Execution time
         value: 0
-      - name: Square kernel
-        value: 1
+      - name: Morphology type
+        value: 4
       - name: Kernel type
-        value: 0
-      - name: Width
-        value: 2
-      - name: Height
-        value: 2
-      - name: Iteration
-        value: 3
-  - name: ErodeFilter
-    parameters:
-      - name: Enable
-        value: 1
-      - name: Execution time
-        value: 0
-      - name: Square kernel
-        value: 1
-      - name: Kernel type
-        value: 0
-      - name: Width
-        value: 1
-      - name: Height
         value: 1
       - name: Iteration
-        value: 2
+        value: 4
+      - name: Kernel size
+        value: 1
   - name: BlurFilter
     parameters:
       - name: Enable
-        value: 1
+        value: 0
       - name: Execution time
         value: 0
       - name: Type
@@ -116,35 +84,35 @@ filters:
         value: 0
       - name: Maximum value
         value: 100
-  - name: VampireTorpedoesDetector
+  - name: ObstacleDetector
     parameters:
       - name: Enable
-        value: 0
+        value: 1
       - name: Execution time
         value: 0
       - name: Debug contour
         value: 1
-      - name: Look for ellipse
-        value: 1
-      - name: Look_for_Heart
-        value: 0
-      - name: Minimum area
-        value: 10000.000000
-      - name: Maximum area
-        value: 900007.000000
-  - name: VampireTorpedoesCloseDetector
-    parameters:
-      - name: Enable
-        value: 0
-      - name: Execution time
-        value: 0
-      - name: Debug contour
+      - name: Look for rectangle
         value: 1
       - name: Look for ellipse
-        value: 1
-      - name: Look_for_Heart
-        value: 1
+        value: 0
+      - name: Target name
+        value: torpidoes
+      - name: Rectangle obstacle
+        value: star
+      - name: Empty ellipse obstacle
+        value: ster
+      - name: Filled ellipse obstacle
+        value: stir
       - name: Minimum area
-        value: 20000.000000
+        value: 1000.000000
       - name: Maximum area
-        value: 1000000.000000
+        value: 5000.000000
+      - name: Circle index
+        value: 0
+      - name: Percent filled
+        value: 0
+      - name: Div min size
+        value: 0.180000
+      - name: Div max size
+        value: 0.120000
