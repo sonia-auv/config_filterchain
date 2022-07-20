@@ -96,9 +96,15 @@ filters:
         value: 50
       - name: Height
         value: 300
-      - name: Thickness
-        value: 1
       - name: Origin X
         value: 0
       - name: Origin Y
         value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 50
+      - name: Center Height
+        value: 50
+      - name: Center Thickness
+        value: 1
