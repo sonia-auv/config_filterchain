@@ -13,17 +13,17 @@ filters:
       - name: Invert plane 3
         value: 0
       - name: Plane 1
-        value: 1
+        value: 3
       - name: Plane 2
-        value: 6
+        value: 1
       - name: Plane 3
-        value: 6
+        value: 2
       - name: Weight plane 1
-        value: 3.000000
+        value: 5.500000
       - name: Weight plane 2
-        value: 0.250000
+        value: 1.000000
       - name: Weight plane 3
-        value: 2.000000
+        value: 0.500000
   - name: IntervalThresholdFilter
     parameters:
       - name: Enable
@@ -33,13 +33,13 @@ filters:
       - name: Threshold type
         value: 1
       - name: Minimum value 1
-        value: 32
+        value: 100
       - name: Minimum value 2
-        value: 92
+        value: 200
   - name: CannyFilter
     parameters:
       - name: Enable
-        value: 0
+        value: 1
       - name: Execution time
         value: 0
       - name: L2 gradient
@@ -61,13 +61,13 @@ filters:
       - name: Kernel type
         value: 1
       - name: Iteration
-        value: 14
+        value: 5
       - name: Kernel size
         value: 1
   - name: HoughLineFilter
     parameters:
       - name: Enable
-        value: 0
+        value: 1
       - name: Execution time
         value: 0
       - name: Draw on original image
@@ -82,6 +82,26 @@ filters:
         value: 39
       - name: Rho
         value: 30.000000
+  - name: BlurFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Type
+        value: 2
+      - name: Kernel size
+        value: 5
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 5
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -105,7 +125,7 @@ filters:
       - name: Debug contour
         value: 1
       - name: Minimum area
-        value: 1000.000000
+        value: 500.000000
       - name: Minimum pixel
         value: 44.000000
   - name: BoundingBoxFilter
@@ -118,9 +138,15 @@ filters:
         value: 70
       - name: Height
         value: 350
-      - name: Thickness
-        value: 1
       - name: Origin X
         value: 0
       - name: Origin Y
         value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 0
+      - name: Center Height
+        value: 0
+      - name: Center Thickness
+        value: 1

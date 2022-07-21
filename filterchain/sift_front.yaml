@@ -1,23 +1,15 @@
-name: deep_compe
+name: sift_front
 filters:
-  - name: DeepFilter
+  - name: SiftMatch
     parameters:
       - name: Enable
         value: 1
       - name: Execution time
         value: 0
-      - name: Debug contour
-        value: 1
-      - name: Model Name
-        value: testCompe_23_06_2022_badge-bottom-bootlegger-buoys-torpidoes_ssd_mobilenet_v2_fpnlite_640x640_20220719T001320
-      - name: Topic Name
-        value: /proc_simulation/front/compressed
-      - name: Confidence Threshold
-        value: 80.000000
-      - name: Badge
-        value: 1
-      - name: Gun
-        value: 1
+      - name: Show_points
+        value: 0
+      - name: Objective
+        value: 0
   - name: BoundingBoxFilter
     parameters:
       - name: Enable
@@ -25,9 +17,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 250
+        value: 260
       - name: Height
-        value: 350
+        value: 260
       - name: Origin X
         value: 0
       - name: Origin Y
