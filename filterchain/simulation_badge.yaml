@@ -133,7 +133,7 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 150
+        value: 200
       - name: Height
         value: 350
       - name: Origin X
