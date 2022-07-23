@@ -9,15 +9,11 @@ filters:
       - name: Debug contour
         value: 1
       - name: Model Name
-        value: testCompe_23_06_2022_badge-bottom-bootlegger-buoys-torpidoes_ssd_mobilenet_v2_fpnlite_640x640_20220719T001320
+        value: testCompe_23_06_2022_badge-bottom-bootlegger-buoys-torpidoes_ssd_mobilenet_v2_fpnlite_640x640_20220721T174208
       - name: Topic Name
-        value: /proc_simulation/front/compressed
+        value: /camera_array/front/image_raw/compressed
       - name: Confidence Threshold
         value: 80.000000
-      - name: Badge
-        value: 1
-      - name: Gun
-        value: 1
   - name: BoundingBoxFilter
     parameters:
       - name: Enable

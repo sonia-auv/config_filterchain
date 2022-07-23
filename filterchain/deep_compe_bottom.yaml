@@ -19,16 +19,18 @@ filters:
       - name: Debug contour
         value: 1
       - name: Model Name
-        value: testCompe_23_06_2022_badge-bottom-bootlegger-buoys-torpidoes_ssd_mobilenet_v2_fpnlite_640x640_20220719T001320
+        value: testCompe_23_06_2022_badge-bottom-bootlegger-buoys-torpidoes_ssd_mobilenet_v2_fpnlite_640x640_20220721T174208
       - name: Topic Name
         value: /proc_image_processing/simple_rotate_image/compressed
       - name: Confidence Threshold
         value: 80.000000
-      - name: Whiskey
+      - name: Notepad
         value: 1
       - name: Phone
         value: 1
-      - name: Notepad
+      - name: Whiskey
+        value: 1
+      - name: Barrel
         value: 1
   - name: BoundingBoxFilter
     parameters:
