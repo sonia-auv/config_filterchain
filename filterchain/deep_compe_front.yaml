@@ -9,7 +9,7 @@ filters:
       - name: Debug contour
         value: 1
       - name: Model Name
-        value: testCompe_23_06_2022_badge-bottom-bootlegger-buoys-torpidoes_ssd_mobilenet_v2_fpnlite_640x640_20220721T174208
+        value: test_23_07_2022
       - name: Topic Name
         value: /camera_array/front/image_raw/compressed
       - name: Confidence Threshold
