@@ -1,4 +1,4 @@
-name: deep_compe
+name: deep_compe_bottom
 filters:
   - name: RotateFilter
     parameters:
