@@ -143,8 +143,8 @@ filters:
       - name: Thickness
         value: 1
       - name: Center Width
-        value: 50
+        value: 100
       - name: Center Height
-        value: 50
+        value: 100
       - name: Center Thickness
         value: 1
