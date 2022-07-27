@@ -1,4 +1,4 @@
-name: simulation_bins_barrel
+name: simulation_bin_barrel
 filters:
   - name: RotateFilter
     parameters:
