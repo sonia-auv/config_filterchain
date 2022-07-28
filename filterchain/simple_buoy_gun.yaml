@@ -1,1 +1,26 @@
 name: simple_buoy_gun
+filters:
+  - name: SubtractAllPlanesFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Invert plane 1
+        value: 0
+      - name: Invert plane 2
+        value: 0
+      - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 3
+      - name: Plane 2
+        value: 4
+      - name: Plane 3
+        value: 0
+      - name: Weight plane 1
+        value: 0.500000
+      - name: Weight plane 2
+        value: 0.500000
+      - name: Weight plane 3
+        value: 1.000000
