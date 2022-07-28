@@ -33,7 +33,7 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 50
+        value: 70
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -69,7 +69,7 @@ filters:
       - name: Filled ellipse obstacle
         value: ""
       - name: Minimum area
-        value: 100.000000
+        value: 200.000000
       - name: Maximum area
         value: 100000.000000
       - name: Circle index
@@ -80,3 +80,25 @@ filters:
         value: 0.000000
       - name: Div max size
         value: 0.000000
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 250
+      - name: Height
+        value: 250
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 50
+      - name: Center Height
+        value: 50
+      - name: Center Thickness
+        value: 1
