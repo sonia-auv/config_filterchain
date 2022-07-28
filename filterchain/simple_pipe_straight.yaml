@@ -13,7 +13,7 @@ filters:
   - name: ContrastAndBrightnessFilter
     parameters:
       - name: Enable
-        value: 1
+        value: 0
       - name: Execution time
         value: 0
       - name: Contrast
@@ -53,7 +53,7 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 240
+        value: 55
   - name: ErodeFilter
     parameters:
       - name: Enable
@@ -87,7 +87,7 @@ filters:
   - name: BlurFilter
     parameters:
       - name: Enable
-        value: 1
+        value: 0
       - name: Execution time
         value: 0
       - name: Type
