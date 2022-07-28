@@ -1,4 +1,4 @@
-name: simulation_bins_barrel
+name: simulation_bin
 filters:
   - name: RotateFilter
     parameters:
@@ -23,7 +23,7 @@ filters:
       - name: Invert plane 3
         value: 0
       - name: Plane 1
-        value: 5
+        value: 4
       - name: Plane 2
         value: 4
       - name: Plane 3
@@ -34,7 +34,7 @@ filters:
         value: 1.000000
       - name: Weight plane 3
         value: 1.000000
-  - name: IntervalThresholdFilter
+  - name: ThresholdFilter
     parameters:
       - name: Enable
         value: 1
@@ -42,10 +42,8 @@ filters:
         value: 0
       - name: Threshold type
         value: 1
-      - name: Minimum value 1
-        value: 39
-      - name: Minimum value 2
-        value: 74
+      - name: Maximum value
+        value: 88
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -57,55 +55,9 @@ filters:
       - name: Kernel type
         value: 1
       - name: Iteration
-        value: 2
-      - name: Kernel size
         value: 4
-  - name: BlurFilter
-    parameters:
-      - name: Enable
-        value: 1
-      - name: Execution time
-        value: 0
-      - name: Type
-        value: 2
       - name: Kernel size
-        value: 29
-  - name: ThresholdFilter
-    parameters:
-      - name: Enable
         value: 1
-      - name: Execution time
-        value: 0
-      - name: Threshold type
-        value: 0
-      - name: Maximum value
-        value: 94
-  - name: EllipseDetector
-    parameters:
-      - name: Enable
-        value: 1
-      - name: Execution time
-        value: 0
-      - name: Debug contour
-        value: 1
-      - name: Look for ellipse
-        value: 1
-      - name: Look_for_Heart
-        value: 0
-      - name: Target name
-        value: bins
-      - name: Descriptor 1
-        value: barrel
-      - name: Descriptor 2
-        value: ""
-      - name: Minimum area
-        value: 1000.000000
-      - name: Maximum area
-        value: 100000.000000
-      - name: Circle index
-        value: 0.900000
-      - name: Percent filled
-        value: 100
   - name: ObstacleDetector
     parameters:
       - name: Enable
@@ -117,27 +69,43 @@ filters:
       - name: Look for rectangle
         value: 1
       - name: Look for ellipse
-        value: 1
+        value: 0
       - name: Target name
-        value: bins
+        value: ""
       - name: Rectangle obstacle
-        value: bottle
+        value: ""
       - name: Empty ellipse obstacle
-        value: barrel
+        value: ""
       - name: Filled ellipse obstacle
         value: ""
       - name: Minimum area
-        value: 1000.000000
+        value: 100.000000
       - name: Maximum area
-        value: 20000.000000
+        value: 10000.000000
       - name: Circle index
-        value: 92
+        value: 0
       - name: Percent filled
-        value: 100
+        value: 0
       - name: Div min size
-        value: 0.240000
+        value: 0.200000
       - name: Div max size
-        value: 0.250000
+        value: 0.300000
+  - name: CenterDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Look for rectangle
+        value: 1
+      - name: Minimum area
+        value: 500.000000
+      - name: Maximum area
+        value: 2000.000000
+      - name: Target name
+        value: cover
   - name: BoundingBoxFilter
     parameters:
       - name: Enable
@@ -145,9 +113,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 110
+        value: 200
       - name: Height
-        value: 110
+        value: 200
       - name: Origin X
         value: 0
       - name: Origin Y

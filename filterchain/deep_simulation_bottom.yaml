@@ -1,4 +1,4 @@
-name: deep_simulation
+name: deep_simulation_bottom
 filters:
   - name: RotateFilter
     parameters:
