@@ -1,4 +1,4 @@
-name: test
+name: simple_shape_torpedoes
 filters:
   - name: SubtractAllPlanesFilter
     parameters:
@@ -13,17 +13,17 @@ filters:
       - name: Invert plane 3
         value: 0
       - name: Plane 1
-        value: 6
+        value: 3
       - name: Plane 2
-        value: 4
-      - name: Plane 3
         value: 1
+      - name: Plane 3
+        value: 2
       - name: Weight plane 1
         value: 3.000000
       - name: Weight plane 2
-        value: 2.000000
-      - name: Weight plane 3
         value: 1.000000
+      - name: Weight plane 3
+        value: 2.000000
   - name: ThresholdFilter
     parameters:
       - name: Enable
@@ -31,23 +31,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Threshold type
-        value: 0
+        value: 2
       - name: Maximum value
-        value: 163
-  - name: MorphologyFilter
-    parameters:
-      - name: Enable
-        value: 1
-      - name: Execution time
-        value: 0
-      - name: Morphology type
-        value: 3
-      - name: Kernel type
-        value: 0
-      - name: Iteration
-        value: 1
-      - name: Kernel size
-        value: 1
+        value: 100
   - name: ShapeDetector
     parameters:
       - name: Enable
@@ -55,16 +41,16 @@ filters:
       - name: Execution time
         value: 0
       - name: Debug contour
-        value: 1
+        value: 0
       - name: Look for filled
         value: 0
       - name: Obstacle
         value: ""
       - name: Minimum area
-        value: 500.000000
+        value: 100.000000
       - name: Maximum area
-        value: 100000.000000
+        value: 1000.000000
       - name: Max div
-        value: 0.150000
+        value: 0.500000
       - name: Min div
-        value: 0.100000
+        value: 0.500000
