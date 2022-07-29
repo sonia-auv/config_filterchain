@@ -1,4 +1,4 @@
-name: test
+name: simple_shape_phone_3
 filters:
   - name: SubtractAllPlanesFilter
     parameters:
@@ -15,15 +15,15 @@ filters:
       - name: Plane 1
         value: 5
       - name: Plane 2
-        value: 4
+        value: 3
       - name: Plane 3
         value: 0
       - name: Weight plane 1
         value: 3.000000
       - name: Weight plane 2
-        value: 0.500000
-      - name: Weight plane 3
         value: 1.000000
+      - name: Weight plane 3
+        value: 0.000000
   - name: IntervalThresholdFilter
     parameters:
       - name: Enable
@@ -33,9 +33,9 @@ filters:
       - name: Threshold type
         value: 1
       - name: Minimum value 1
-        value: 180
+        value: 50
       - name: Minimum value 2
-        value: 230
+        value: 255
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -49,8 +49,8 @@ filters:
       - name: Iteration
         value: 2
       - name: Kernel size
-        value: 2
-  - name: ObstacleDetector
+        value: 5
+  - name: ContourDetector
     parameters:
       - name: Enable
         value: 1
@@ -58,27 +58,11 @@ filters:
         value: 0
       - name: Debug contour
         value: 1
-      - name: Look for rectangle
-        value: 0
-      - name: Look for ellipse
-        value: 1
       - name: Target name
         value: ""
-      - name: Rectangle obstacle
-        value: ""
-      - name: Empty ellipse obstacle
-        value: ""
-      - name: Filled ellipse obstacle
-        value: ""
+      - name: N biggest contour
+        value: 1
       - name: Minimum area
         value: 100.000000
       - name: Maximum area
-        value: 1000.000000
-      - name: Circle index
-        value: 0
-      - name: Percent filled
-        value: 0
-      - name: Div min size
-        value: 0.000000
-      - name: Div max size
-        value: 0.000000
+        value: 15000.000000
