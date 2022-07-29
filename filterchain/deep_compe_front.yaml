@@ -9,7 +9,7 @@ filters:
       - name: Debug contour
         value: 1
       - name: Model Name
-        value: test_23_07_2022
+        value: compeV1.0
       - name: Topic Name
         value: /camera_array/front/image_raw/compressed
       - name: Confidence Threshold
