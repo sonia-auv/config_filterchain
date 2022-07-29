@@ -111,9 +111,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 200
+        value: 250
       - name: Height
-        value: 200
+        value: 250
       - name: Origin X
         value: 0
       - name: Origin Y
