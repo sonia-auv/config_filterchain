@@ -13,7 +13,7 @@ filters:
   - name: ContrastAndBrightnessFilter
     parameters:
       - name: Enable
-        value: 1
+        value: 0
       - name: Execution time
         value: 0
       - name: Contrast
@@ -53,11 +53,11 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 100
+        value: 120
   - name: ErodeFilter
     parameters:
       - name: Enable
-        value: 1
+        value: 0
       - name: Execution time
         value: 0
       - name: Square kernel
@@ -81,7 +81,7 @@ filters:
       - name: Kernel type
         value: 1
       - name: Iteration
-        value: 1
+        value: 6
       - name: Kernel size
         value: 1
   - name: BlurFilter
