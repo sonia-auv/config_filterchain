@@ -43,7 +43,7 @@ filters:
       - name: Threshold type
         value: 1
       - name: Maximum value
-        value: 70
+        value: 87
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -77,9 +77,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 50
+        value: 30
       - name: Height
-        value: 300
+        value: 200
       - name: Origin X
         value: 0
       - name: Origin Y

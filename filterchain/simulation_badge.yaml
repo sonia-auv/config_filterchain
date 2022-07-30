@@ -81,13 +81,13 @@ filters:
       - name: Look for ellipse
         value: 1
       - name: Target name
-        value: buoy
+        value: Buoy
       - name: Rectangle obstacle
-        value: gun
+        value: Gun
       - name: Empty ellipse obstacle
-        value: badge
+        value: Badge
       - name: Filled ellipse obstacle
-        value: badge
+        value: Badge
       - name: Minimum area
         value: 1000.000000
       - name: Maximum area
@@ -113,7 +113,7 @@ filters:
       - name: Look_for_Heart
         value: 0
       - name: Target name
-        value: badge
+        value: Badge
       - name: Descriptor 1
         value: ""
       - name: Descriptor 2

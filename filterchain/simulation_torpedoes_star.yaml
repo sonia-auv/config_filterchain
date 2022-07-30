@@ -1,4 +1,4 @@
-name: simple_torpedoes_trapeze
+name: simulation_torpedoes_star
 filters:
   - name: SubtractAllPlanesFilter
     parameters:
@@ -23,7 +23,7 @@ filters:
       - name: Weight plane 2
         value: 1.000000
       - name: Weight plane 3
-        value: 2.000000
+        value: 1.200000
   - name: ThresholdFilter
     parameters:
       - name: Enable
@@ -33,7 +33,7 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 70
+        value: 29
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -43,7 +43,7 @@ filters:
       - name: Morphology type
         value: 3
       - name: Kernel type
-        value: 1
+        value: 0
       - name: Iteration
         value: 1
       - name: Kernel size
@@ -61,15 +61,15 @@ filters:
       - name: Look for ellipse
         value: 1
       - name: Target name
-        value: ""
+        value: torpedoes
       - name: Rectangle obstacle
-        value: ""
+        value: torpedoes
       - name: Empty ellipse obstacle
-        value: ""
+        value: torpedoes
       - name: Filled ellipse obstacle
-        value: ""
+        value: torpedoes
       - name: Minimum area
-        value: 200.000000
+        value: 1000.000000
       - name: Maximum area
         value: 100000.000000
       - name: Circle index
@@ -87,9 +87,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 250
+        value: 300
       - name: Height
-        value: 250
+        value: 300
       - name: Origin X
         value: 0
       - name: Origin Y
@@ -97,8 +97,8 @@ filters:
       - name: Thickness
         value: 1
       - name: Center Width
-        value: 50
+        value: 100
       - name: Center Height
-        value: 50
+        value: 100
       - name: Center Thickness
         value: 1
