@@ -1,0 +1,56 @@
+name: simple_notepad_detector
+filters:
+  - name: HSVThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Minimum H
+        value: 50
+      - name: Maximum H
+        value: 130
+      - name: Minimum S
+        value: 110
+      - name: Maximum S
+        value: 180
+      - name: Minimum V
+        value: 100
+      - name: Maximum V
+        value: 160
+  - name: BlurFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Type
+        value: 1
+      - name: Kernel size
+        value: 3
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 120
+  - name: ContourDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Target name
+        value: ""
+      - name: N biggest contour
+        value: 1
+      - name: Minimum area
+        value: 100.000000
+      - name: Maximum area
+        value: 700.000000
