@@ -33,7 +33,7 @@ filters:
       - name: Invert plane 3
         value: 0
       - name: Plane 1
-        value: 2
+        value: 5
       - name: Plane 2
         value: 0
       - name: Plane 3
@@ -53,11 +53,11 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 120
+        value: 100
   - name: ErodeFilter
     parameters:
       - name: Enable
-        value: 0
+        value: 1
       - name: Execution time
         value: 0
       - name: Square kernel
@@ -81,7 +81,7 @@ filters:
       - name: Kernel type
         value: 1
       - name: Iteration
-        value: 6
+        value: 1
       - name: Kernel size
         value: 1
   - name: BlurFilter
