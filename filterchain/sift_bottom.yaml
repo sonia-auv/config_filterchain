@@ -10,6 +10,16 @@ filters:
         value: 1
       - name: Rotation type
         value: 1
+  - name: ContrastAndBrightnessFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Contrast
+        value: 2.000000
+      - name: Brightness
+        value: 10.000000
   - name: SiftMatch
     parameters:
       - name: Enable
@@ -27,9 +37,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 100
+        value: 200
       - name: Height
-        value: 100
+        value: 200
       - name: Origin X
         value: 0
       - name: Origin Y
