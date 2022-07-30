@@ -1,4 +1,4 @@
-name: simulation_bin
+name: simulation_tables
 filters:
   - name: RotateFilter
     parameters:
@@ -69,11 +69,11 @@ filters:
       - name: Look for rectangle
         value: 1
       - name: Minimum area
-        value: 2000.000000
+        value: 1000.000000
       - name: Maximum area
         value: 20000.000000
       - name: Target name
-        value: cover
+        value: tables
   - name: BoundingBoxFilter
     parameters:
       - name: Enable
@@ -81,9 +81,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 0
+        value: 10
       - name: Height
-        value: 0
+        value: 10
       - name: Origin X
         value: 0
       - name: Origin Y
@@ -91,8 +91,8 @@ filters:
       - name: Thickness
         value: 1
       - name: Center Width
-        value: 50
+        value: 90
       - name: Center Height
-        value: 50
+        value: 90
       - name: Center Thickness
         value: 1
