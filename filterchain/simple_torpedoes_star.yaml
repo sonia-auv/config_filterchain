@@ -13,17 +13,17 @@ filters:
       - name: Invert plane 3
         value: 0
       - name: Plane 1
-        value: 5
+        value: 3
       - name: Plane 2
         value: 1
       - name: Plane 3
-        value: 0
+        value: 2
       - name: Weight plane 1
-        value: 1.000000
+        value: 3.000000
       - name: Weight plane 2
         value: 1.000000
       - name: Weight plane 3
-        value: 1.000000
+        value: 2.000000
   - name: ThresholdFilter
     parameters:
       - name: Enable
@@ -45,7 +45,7 @@ filters:
       - name: Kernel type
         value: 1
       - name: Iteration
-        value: 5
+        value: 3
       - name: Kernel size
         value: 1
   - name: ObstacleDetector
@@ -61,7 +61,7 @@ filters:
       - name: Look for ellipse
         value: 1
       - name: Target name
-        value: ""
+        value: torpedoes
       - name: Rectangle obstacle
         value: ""
       - name: Empty ellipse obstacle

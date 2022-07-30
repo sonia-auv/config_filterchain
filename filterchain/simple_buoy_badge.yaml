@@ -33,7 +33,7 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 31
+        value: 90
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -61,13 +61,13 @@ filters:
       - name: Look for ellipse
         value: 1
       - name: Target name
-        value: badge
+        value: Badge
       - name: Rectangle obstacle
-        value: badge
+        value: Badge
       - name: Empty ellipse obstacle
-        value: badge
+        value: Badge
       - name: Filled ellipse obstacle
-        value: badge
+        value: Badge
       - name: Minimum area
         value: 100.000000
       - name: Maximum area

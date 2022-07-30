@@ -21,13 +21,13 @@ filters:
       - name: Invert plane 2
         value: 1
       - name: Invert plane 3
-        value: 0
+        value: 1
       - name: Plane 1
         value: 5
       - name: Plane 2
         value: 4
       - name: Plane 3
-        value: 0
+        value: 3
       - name: Weight plane 1
         value: 3.000000
       - name: Weight plane 2
@@ -43,7 +43,7 @@ filters:
       - name: Threshold type
         value: 1
       - name: Minimum value 1
-        value: 190
+        value: 50
       - name: Minimum value 2
         value: 230
   - name: ErodeFilter
