@@ -87,9 +87,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Width
-        value: 200
+        value: 300
       - name: Height
-        value: 200
+        value: 300
       - name: Origin X
         value: 0
       - name: Origin Y
@@ -97,8 +97,8 @@ filters:
       - name: Thickness
         value: 1
       - name: Center Width
-        value: 50
+        value: 100
       - name: Center Height
-        value: 50
+        value: 100
       - name: Center Thickness
         value: 1

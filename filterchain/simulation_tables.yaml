@@ -73,7 +73,7 @@ filters:
       - name: Maximum area
         value: 20000.000000
       - name: Target name
-        value: Tables
+        value: tables
   - name: BoundingBoxFilter
     parameters:
       - name: Enable
