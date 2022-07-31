@@ -19,7 +19,7 @@ filters:
       - name: Debug contour
         value: 1
       - name: Model Name
-        value: compeV1.05
+        value: compeV1.0
       - name: Topic Name
         value: /proc_image_processing/simple_rotate_image/compressed
       - name: Confidence Threshold
