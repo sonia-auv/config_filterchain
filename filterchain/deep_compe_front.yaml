@@ -16,15 +16,17 @@ filters:
         value: 80.000000
       - name: Badge
         value: 1
-      - name: G-Man
+      - name: Phone
         value: 1
       - name: Gun
         value: 1
-      - name: Phone
+      - name: G-Man
+        value: 1
+      - name: Notepad
         value: 1
       - name: Whiskey
         value: 1
-      - name: Barrel
+      - name: Bootlegger
         value: 1
   - name: BoundingBoxFilter
     parameters:
