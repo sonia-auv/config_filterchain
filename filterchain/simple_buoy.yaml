@@ -33,9 +33,9 @@ filters:
       - name: Invert plane 3
         value: 0
       - name: Plane 1
-        value: 3
+        value: 2
       - name: Plane 2
-        value: 0
+        value: 1
       - name: Plane 3
         value: 0
       - name: Weight plane 1
@@ -53,7 +53,21 @@ filters:
       - name: Threshold type
         value: 0
       - name: Maximum value
-        value: 100
+        value: 50
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 4
+      - name: Kernel type
+        value: 0
+      - name: Iteration
+        value: 5
+      - name: Kernel size
+        value: 1
   - name: ObstacleDetector
     parameters:
       - name: Enable
@@ -65,12 +79,72 @@ filters:
       - name: Look for rectangle
         value: 1
       - name: Look for ellipse
-        value: 0
+        value: 1
+      - name: Target name
+        value: Badge
+      - name: Rectangle obstacle
+        value: Badge
+      - name: Empty ellipse obstacle
+        value: Badge
+      - name: Filled ellipse obstacle
+        value: Badge
       - name: Minimum area
-        value: 10000.000000
+        value: 1000.000000
       - name: Maximum area
         value: 100000.000000
       - name: Circle index
         value: 0
       - name: Percent filled
         value: 50
+      - name: Div min size
+        value: 0.000000
+      - name: Div max size
+        value: 0.000000
+  - name: EllipseDetector
+    parameters:
+      - name: Enable
+        value: 0
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 0
+      - name: Look for ellipse
+        value: 0
+      - name: Look_for_Heart
+        value: 0
+      - name: Target name
+        value: ""
+      - name: Descriptor 1
+        value: ""
+      - name: Descriptor 2
+        value: ""
+      - name: Minimum area
+        value: 5000.000000
+      - name: Maximum area
+        value: 100000.000000
+      - name: Circle index
+        value: 0.000000
+      - name: Percent filled
+        value: 0
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 200
+      - name: Height
+        value: 300
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 100
+      - name: Center Height
+        value: 100
+      - name: Center Thickness
+        value: 1
