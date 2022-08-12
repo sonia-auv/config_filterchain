@@ -70,7 +70,7 @@ filters:
         value: 5
       - name: Iteration
         value: 5
-  - name: CenterCoffinDetector
+  - name: CenterDetector
     parameters:
       - name: Enable
         value: 1

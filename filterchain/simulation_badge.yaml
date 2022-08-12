@@ -1,0 +1,150 @@
+name: simulation_badge
+filters:
+  - name: SubtractAllPlanesFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Invert plane 1
+        value: 0
+      - name: Invert plane 2
+        value: 0
+      - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 2
+      - name: Plane 2
+        value: 1
+      - name: Plane 3
+        value: 0
+      - name: Weight plane 1
+        value: 1.000000
+      - name: Weight plane 2
+        value: 1.000000
+      - name: Weight plane 3
+        value: 1.000000
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 11
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 4
+      - name: Kernel type
+        value: 1
+      - name: Iteration
+        value: 4
+      - name: Kernel size
+        value: 4
+  - name: BlurFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Type
+        value: 2
+      - name: Kernel size
+        value: 15
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 100
+  - name: ObstacleDetector
+    parameters:
+      - name: Enable
+        value: 0
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Look for rectangle
+        value: 0
+      - name: Look for ellipse
+        value: 1
+      - name: Target name
+        value: Buoy
+      - name: Rectangle obstacle
+        value: Gun
+      - name: Empty ellipse obstacle
+        value: Badge
+      - name: Filled ellipse obstacle
+        value: Badge
+      - name: Minimum area
+        value: 1000.000000
+      - name: Maximum area
+        value: 100000.000000
+      - name: Circle index
+        value: 99
+      - name: Percent filled
+        value: 100
+      - name: Div min size
+        value: 0.000000
+      - name: Div max size
+        value: 0.000000
+  - name: EllipseDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Look for ellipse
+        value: 1
+      - name: Look_for_Heart
+        value: 0
+      - name: Target name
+        value: Badge
+      - name: Descriptor 1
+        value: ""
+      - name: Descriptor 2
+        value: ""
+      - name: Minimum area
+        value: 1000.000000
+      - name: Maximum area
+        value: 500000.000000
+      - name: Circle index
+        value: 0.500000
+      - name: Percent filled
+        value: 100
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 200
+      - name: Height
+        value: 350
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 100
+      - name: Center Height
+        value: 100
+      - name: Center Thickness
+        value: 1

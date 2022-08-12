@@ -1,0 +1,38 @@
+name: deep_compe_front
+filters:
+  - name: DeepFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Model Name
+        value: compeV1.0
+      - name: Topic Name
+        value: /proc_simulation/front/compressed
+      - name: Confidence Threshold
+        value: 80.000000
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 250
+      - name: Height
+        value: 350
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 100
+      - name: Center Height
+        value: 100
+      - name: Center Thickness
+        value: 1

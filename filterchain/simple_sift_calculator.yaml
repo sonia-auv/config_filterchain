@@ -1,0 +1,8 @@
+name: simple_sift_calculator
+filters:
+  - name: SiftCalculator
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
