@@ -1,0 +1,54 @@
+name: sift_bottom
+filters:
+  - name: RotateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Transpose
+        value: 1
+      - name: Rotation type
+        value: 1
+  - name: ContrastAndBrightnessFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Contrast
+        value: 2.000000
+      - name: Brightness
+        value: 10.000000
+  - name: SiftMatch
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Show_points
+        value: 0
+      - name: Objective
+        value: 3
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 200
+      - name: Height
+        value: 200
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 50
+      - name: Center Height
+        value: 50
+      - name: Center Thickness
+        value: 1

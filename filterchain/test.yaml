@@ -1,0 +1,84 @@
+name: test
+filters:
+  - name: SubtractAllPlanesFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Invert plane 1
+        value: 0
+      - name: Invert plane 2
+        value: 1
+      - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 5
+      - name: Plane 2
+        value: 4
+      - name: Plane 3
+        value: 0
+      - name: Weight plane 1
+        value: 3.000000
+      - name: Weight plane 2
+        value: 0.500000
+      - name: Weight plane 3
+        value: 1.000000
+  - name: IntervalThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 1
+      - name: Minimum value 1
+        value: 180
+      - name: Minimum value 2
+        value: 230
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 4
+      - name: Kernel type
+        value: 0
+      - name: Iteration
+        value: 2
+      - name: Kernel size
+        value: 2
+  - name: ObstacleDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Look for rectangle
+        value: 0
+      - name: Look for ellipse
+        value: 1
+      - name: Target name
+        value: ""
+      - name: Rectangle obstacle
+        value: ""
+      - name: Empty ellipse obstacle
+        value: ""
+      - name: Filled ellipse obstacle
+        value: ""
+      - name: Minimum area
+        value: 100.000000
+      - name: Maximum area
+        value: 1000.000000
+      - name: Circle index
+        value: 0
+      - name: Percent filled
+        value: 0
+      - name: Div min size
+        value: 0.000000
+      - name: Div max size
+        value: 0.000000

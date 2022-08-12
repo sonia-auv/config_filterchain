@@ -1,0 +1,48 @@
+name: deep_compe_bottom
+filters:
+  - name: RotateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Transpose
+        value: 1
+      - name: Rotation type
+        value: 1
+  - name: DeepFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Model Name
+        value: compeV1.0
+      - name: Topic Name
+        value: /proc_image_processing/simple_rotate_image/compressed
+      - name: Confidence Threshold
+        value: 50.000000
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 90
+      - name: Height
+        value: 115
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 30
+      - name: Center Height
+        value: 30
+      - name: Center Thickness
+        value: 1

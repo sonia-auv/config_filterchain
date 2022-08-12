@@ -1,8 +1,20 @@
 name: simple_bin_handle
 filters:
+  - name: RotateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Transpose
+        value: 1
+      - name: Rotation type
+        value: 1
   - name: CropFilter
     parameters:
       - name: Enable
+        value: 0
+      - name: Execution time
         value: 0
       - name: X Offset
         value: 244
@@ -16,17 +28,19 @@ filters:
     parameters:
       - name: Enable
         value: 1
-      - name: Plane 1
-        value: 4
-      - name: Plane 2
-        value: 0
-      - name: Plane 3
+      - name: Execution time
         value: 0
       - name: Invert plane 1
         value: 0
       - name: Invert plane 2
         value: 0
       - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 4
+      - name: Plane 2
+        value: 0
+      - name: Plane 3
         value: 0
       - name: Weight plane 1
         value: 1.000000
@@ -38,6 +52,8 @@ filters:
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
       - name: Threshold type
         value: 1
       - name: Maximum value
@@ -46,18 +62,22 @@ filters:
     parameters:
       - name: Enable
         value: 0
+      - name: Execution time
+        value: 0
       - name: L2 gradient
         value: 0
+      - name: Aperture size
+        value: 3
       - name: Threshold 1
         value: 100
       - name: Threshold 2
         value: 200
-      - name: Aperture size
-        value: 3
   - name: ErodeFilter
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
       - name: Square kernel
         value: 1
       - name: Kernel type
@@ -72,6 +92,8 @@ filters:
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
       - name: Square kernel
         value: 1
       - name: Kernel type
@@ -86,19 +108,63 @@ filters:
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
       - name: Type
-        value: 3
+        value: 2
       - name: Kernel size
-        value: 6
-  - name: VampireBodyDetector
+        value: 35
+  - name: ThresholdFilter
     parameters:
       - name: Enable
         value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 100
+  - name: CenterDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
       - name: Debug contour
         value: 1
       - name: Look for rectangle
         value: 1
       - name: Minimum area
-        value: 1000.000000
+        value: 100.000000
+      - name: Maximum area
+        value: 150920.000000
+  - name: VampireBodyDetector
+    parameters:
+      - name: Enable
+        value: 0
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Look for rectangle
+        value: 1
+      - name: Minimum area
+        value: 541.000000
       - name: Maximum area
         value: 20000.000000
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 80
+      - name: Height
+        value: 100
+      - name: Thickness
+        value: 1
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0

@@ -1,0 +1,94 @@
+name: simulation_pipe_straight
+filters:
+  - name: RotateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Transpose
+        value: 1
+      - name: Rotation type
+        value: 1
+  - name: SubtractAllPlanesFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Invert plane 1
+        value: 0
+      - name: Invert plane 2
+        value: 0
+      - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 4
+      - name: Plane 2
+        value: 0
+      - name: Plane 3
+        value: 0
+      - name: Weight plane 1
+        value: 1.000000
+      - name: Weight plane 2
+        value: 1.000000
+      - name: Weight plane 3
+        value: 1.000000
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 1
+      - name: Maximum value
+        value: 87
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 4
+      - name: Kernel type
+        value: 0
+      - name: Iteration
+        value: 3
+      - name: Kernel size
+        value: 1
+  - name: PipeStraightDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Minimum area
+        value: 200.000000
+      - name: Minimum pixel
+        value: 0.000000
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 30
+      - name: Height
+        value: 200
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 50
+      - name: Center Height
+        value: 50
+      - name: Center Thickness
+        value: 1

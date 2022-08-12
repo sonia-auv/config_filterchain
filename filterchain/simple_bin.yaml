@@ -1,0 +1,128 @@
+name: simple_bin
+filters:
+  - name: RotateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Transpose
+        value: 1
+      - name: Rotation type
+        value: 1
+  - name: ContrastAndBrightnessFilter
+    parameters:
+      - name: Enable
+        value: 0
+      - name: Execution time
+        value: 0
+      - name: Contrast
+        value: 3.000000
+      - name: Brightness
+        value: -117.000000
+  - name: SubtractAllPlanesFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Invert plane 1
+        value: 0
+      - name: Invert plane 2
+        value: 0
+      - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 5
+      - name: Plane 2
+        value: 4
+      - name: Plane 3
+        value: 0
+      - name: Weight plane 1
+        value: 1.000000
+      - name: Weight plane 2
+        value: 1.000000
+      - name: Weight plane 3
+        value: 1.000000
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 83
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 4
+      - name: Kernel type
+        value: 1
+      - name: Iteration
+        value: 5
+      - name: Kernel size
+        value: 2
+  - name: BlurFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Type
+        value: 2
+      - name: Kernel size
+        value: 10
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 100
+  - name: CenterDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Look for rectangle
+        value: 1
+      - name: Minimum area
+        value: 100.000000
+      - name: Maximum area
+        value: 50000.000000
+      - name: Target name
+        value: cover
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 200
+      - name: Height
+        value: 200
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 50
+      - name: Center Height
+        value: 50
+      - name: Center Thickness
+        value: 1

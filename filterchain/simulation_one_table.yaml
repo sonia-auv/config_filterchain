@@ -1,0 +1,114 @@
+name: simulation_one_table
+filters:
+  - name: RotateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Transpose
+        value: 1
+      - name: Rotation type
+        value: 1
+  - name: SubtractAllPlanesFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Invert plane 1
+        value: 0
+      - name: Invert plane 2
+        value: 0
+      - name: Invert plane 3
+        value: 0
+      - name: Plane 1
+        value: 4
+      - name: Plane 2
+        value: 4
+      - name: Plane 3
+        value: 0
+      - name: Weight plane 1
+        value: 2.000000
+      - name: Weight plane 2
+        value: 1.000000
+      - name: Weight plane 3
+        value: 1.000000
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 1
+      - name: Maximum value
+        value: 85
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 4
+      - name: Kernel type
+        value: 1
+      - name: Iteration
+        value: 4
+      - name: Kernel size
+        value: 1
+  - name: ObstacleDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Look for rectangle
+        value: 1
+      - name: Look for ellipse
+        value: 1
+      - name: Target name
+        value: Table
+      - name: Rectangle obstacle
+        value: ""
+      - name: Empty ellipse obstacle
+        value: ""
+      - name: Filled ellipse obstacle
+        value: ""
+      - name: Minimum area
+        value: 1000.000000
+      - name: Maximum area
+        value: 100000.000000
+      - name: Circle index
+        value: 0
+      - name: Percent filled
+        value: 0
+      - name: Div min size
+        value: 0.000000
+      - name: Div max size
+        value: 0.000000
+  - name: BoundingBoxFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Width
+        value: 100
+      - name: Height
+        value: 100
+      - name: Origin X
+        value: 0
+      - name: Origin Y
+        value: 0
+      - name: Thickness
+        value: 1
+      - name: Center Width
+        value: 150
+      - name: Center Height
+        value: 150
+      - name: Center Thickness
+        value: 1
