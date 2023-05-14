@@ -1,0 +1,60 @@
+name: cvm_bgr_gate
+filters:
+  - name: BGRFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Filter Type
+        value: 0
+      - name: Return Original Image
+        value: 1
+      - name: Blue
+        value: 50.000000
+      - name: Green
+        value: 128.000000
+      - name: Red
+        value: 128.000000
+      - name: Blue Threshold
+        value: 10.000000
+      - name: Green Threshold
+        value: 128.000000
+      - name: Red Threshold
+        value: 128.000000
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 0
+      - name: Maximum value
+        value: 10
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 4
+      - name: Kernel type
+        value: 0
+      - name: Iteration
+        value: 3
+      - name: Kernel size
+        value: 3
+  - name: PipeStraightDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Debug contour
+        value: 1
+      - name: Minimum area
+        value: 200.000000
+      - name: Minimum pixel
+        value: 0.000000
