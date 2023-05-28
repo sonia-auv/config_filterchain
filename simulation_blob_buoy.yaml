@@ -1,0 +1,72 @@
+name: simulation_blob_buoy
+filters:
+  - name: BGRFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Filter Type
+        value: 1
+      - name: Return Original Image
+        value: 1
+      - name: Blue
+        value: 148.000000
+      - name: Green
+        value: 128.000000
+      - name: Red
+        value: 92.000000
+      - name: Blue Threshold
+        value: 5.000000
+      - name: Green Threshold
+        value: 5.000000
+      - name: Red Threshold
+        value: 5.000000
+  - name: ThresholdFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Threshold type
+        value: 1
+      - name: Maximum value
+        value: 100
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 3
+      - name: Kernel type
+        value: 0
+      - name: Iteration
+        value: 9
+      - name: Kernel size
+        value: 2
+  - name: SimpleBlob
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Enable area filter
+        value: 0
+      - name: Min Area
+        value: 0
+      - name: Max Area
+        value: 2147483647
+      - name: Min Circularity
+        value: 0.000000
+      - name: Max Circularity
+        value: 1.000000
+      - name: Min Inertia
+        value: 0.000000
+      - name: Max Inertia
+        value: 1.000000
+      - name: Min Convexity
+        value: 0.000000
+      - name: Max Convexity
+        value: 1.000000
