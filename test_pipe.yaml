@@ -1,4 +1,4 @@
-name: simulation_bgr_pipe_straight
+name: test_pipe
 filters:
   - name: RotateFilter
     parameters:
@@ -21,7 +21,7 @@ filters:
       - name: Return Original Image
         value: 1
       - name: Blue
-        value: 15.000000
+        value: 13.000000
       - name: Green
         value: 128.000000
       - name: Red
@@ -39,9 +39,9 @@ filters:
       - name: Execution time
         value: 0
       - name: Threshold type
-        value: 0
+        value: 1
       - name: Maximum value
-        value: 87
+        value: 100
   - name: MorphologyFilter
     parameters:
       - name: Enable
@@ -49,44 +49,18 @@ filters:
       - name: Execution time
         value: 0
       - name: Morphology type
-        value: 4
+        value: 3
       - name: Kernel type
         value: 0
       - name: Iteration
-        value: 3
+        value: 2
       - name: Kernel size
         value: 1
-  - name: PipeStraightDetector
+  - name: PipeDetector
     parameters:
       - name: Enable
         value: 1
       - name: Execution time
         value: 0
-      - name: Debug contour
-        value: 1
-      - name: Minimum area
-        value: 200.000000
-      - name: Minimum pixel
-        value: 0.000000
-  - name: BoundingBoxFilter
-    parameters:
-      - name: Enable
-        value: 1
-      - name: Execution time
-        value: 0
-      - name: Width
-        value: 30
-      - name: Height
-        value: 200
-      - name: Origin X
-        value: 0
-      - name: Origin Y
-        value: 0
-      - name: Thickness
-        value: 1
-      - name: Center Width
-        value: 50
-      - name: Center Height
-        value: 50
-      - name: Center Thickness
+      - name: Show angle
         value: 1

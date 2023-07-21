@@ -1,0 +1,94 @@
+name: test_symbole
+filters:
+  - name: GateSymbolDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Tol. white
+        value: 50
+      - name: Debug state
+        value: 2
+      - name: Size of kernels
+        value: 3
+      - name: Threshold
+        value: 90
+  - name: MorphologyFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Morphology type
+        value: 3
+      - name: Kernel type
+        value: 1
+      - name: Iteration
+        value: 3
+      - name: Kernel size
+        value: 2
+  - name: DilateFilter
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Square kernel
+        value: 1
+      - name: Kernel type
+        value: 0
+      - name: Width
+        value: 1
+      - name: Height
+        value: 1
+      - name: Iteration
+        value: 1
+  - name: BlobDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Enable area filter
+        value: 1
+      - name: Min Area
+        value: 500
+      - name: Max Area
+        value: 2147483647
+      - name: Min Circularity
+        value: 0.000000
+      - name: Max Circularity
+        value: 0.250000
+      - name: Min Inertia
+        value: 0.750000
+      - name: Max Inertia
+        value: 1.000000
+      - name: Min Convexity
+        value: 0.400000
+      - name: Max Convexity
+        value: 0.600000
+  - name: BlobDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Enable area filter
+        value: 1
+      - name: Min Area
+        value: 500
+      - name: Max Area
+        value: 2147483647
+      - name: Min Circularity
+        value: 0.100000
+      - name: Max Circularity
+        value: 0.300000
+      - name: Min Inertia
+        value: 0.400000
+      - name: Max Inertia
+        value: 0.600000
+      - name: Min Convexity
+        value: 0.500000
+      - name: Max Convexity
+        value: 0.700000

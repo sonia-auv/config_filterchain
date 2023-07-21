@@ -1,0 +1,16 @@
+name: simulation_blob_gate
+filters:
+  - name: GateBlobDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Tol. red
+        value: 100
+      - name: Tol. for other colors
+        value: 20
+      - name: Tol. black
+        value: 20
+      - name: Debug state
+        value: 0

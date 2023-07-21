@@ -1,0 +1,16 @@
+name: simulation_symbole_gate
+filters:
+  - name: GateSymbolDetector
+    parameters:
+      - name: Enable
+        value: 1
+      - name: Execution time
+        value: 0
+      - name: Tol. white
+        value: 60
+      - name: Debug state
+        value: 0
+      - name: Size of kernels
+        value: 5
+      - name: Threshold
+        value: 95
